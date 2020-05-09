@@ -23,8 +23,8 @@
      get(0) -> WebElement -> getText -> String -> int
 13) Mouse over on size of the first item
 14) Click on WishList Now
-15) Close Browser
-=================================================================
+15) Close Browse
+	=================================================================
 
 ****#TestCase - Nykaa.com#****
 
