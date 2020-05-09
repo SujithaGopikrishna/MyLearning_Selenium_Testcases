@@ -24,7 +24,6 @@
 13) Mouse over on size of the first item
 14) Click on WishList Now
 15) Close Browse
-              ==============================================
 
 ****#TestCase - Nykaa.com#****
 
@@ -45,7 +44,6 @@
 15) Click on Continue as Guest
 16) Print the warning message (delay in shipment)
 17) Close all windows
-=================================================================
 
 ****#TestCase - makemytrip.com#****
 
@@ -63,7 +61,6 @@
 12) Click on BOOK THIS NOW
 13) Print the Total Payable amount
 14) Close the browser
-=================================================================
 
 ****#TestCase - hp.com#****
 
@@ -81,7 +78,6 @@
 12) Click on Place Order 
 13) Capture the Error message and Print 
 14) Close Browser
-=====================================================================
 
 ****#TestCase - bigbasket.com#****
 
@@ -103,7 +99,6 @@
 17) Reduce the Quantity of Dal as 1 
 18) Validate the Sub Total for the current items
 19) Close the Browser
-===================================================================
 
 ****#TestCase - ajio.com#****
 
@@ -121,7 +116,6 @@
 12) Verify the Coupon Savings amount(round off if it in decimal) under Order Summary and the matches the amount calculated in Product details 
 13) Click on Delete and Delete the item from Bag 
 14) Close all the browsers
-=================================================================
 
 ****#TestCase - azure.microsoft.com#****
 
