@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class Day2NykaaWorkout {
+public class NykaaTestCase {
 
 	public static void main(String[] args) throws InterruptedException {
 	
@@ -128,11 +128,11 @@ public class Day2NykaaWorkout {
 		// Print the warning message
 		
 		WebElement warning = driver.findElementByXPath("//div[text()='Please expect delay in shipments because of the national lockdown']");
-        String Printwarning = warning.getText();
-        System.out.println("Warning regarding current situation: "+ Printwarning);
+                String Printwarning = warning.getText();
+                System.out.println("Warning regarding current situation: "+ Printwarning);
         
-        // close all the windows
-        driver.quit();
+               // close all the windows
+               driver.quit();
         
         
 		
