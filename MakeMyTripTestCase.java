@@ -124,7 +124,7 @@ public class Day3MakeMyTripWorkout {
 		String pagetitle = driver.getTitle();
 		System.out.println("To confirm the first resulting hotel name with page titel:" +pagetitle);
 		
-// move to more options
+// Click MORE OPTIONS link and Select 3Months plan and close
 		//driver.findElementByXPath("(//span[text()='MORE OPTIONS'])[1]").click();
 		
 		driver.findElementById("detpg_multi_view_combo").click();
