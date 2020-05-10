@@ -47,14 +47,14 @@ public class Day1MyntraWorkout {
 	//Finding the count of coat alone
 	
 	String second = driver.findElementByXPath("(//span[@class='categories-num'])[2]").getText();
-    String secondcount = second.replaceAll("\\D", "");
-    int coatcount = Integer.parseInt(secondcount);
-    System.out.println("CoatCount:" + coatcount);
+        String secondcount = second.replaceAll("\\D", "");
+        int coatcount = Integer.parseInt(secondcount);
+        System.out.println("CoatCount:" + coatcount);
 	
 	
 	int totalsum = jacketcount + coatcount;
 	
-   System.out.println("Sum of jackets and coats:" + totalsum );
+        System.out.println("Sum of jackets and coats:" + totalsum );
    
    if(totalsum == jckandcotcount)
    {
