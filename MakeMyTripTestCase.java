@@ -126,25 +126,25 @@ public class Day3MakeMyTripWorkout {
 		
 // Click MORE OPTIONS link and Select 3Months plan and close
 		//driver.findElementByXPath("(//span[text()='MORE OPTIONS'])[1]").click();
-		
-		driver.findElementById("detpg_multi_view_combo").click();
-		Thread.sleep(3000);
+		// ---- below 130 to 134 is correct for "click more option & 3months" and now i have changed the code as per current website changes
+		//driver.findElementById("detpg_multi_view_combo").click();
+		//Thread.sleep(3000);
 		//  select the 3 months plan and close it
 		//driver.findElementByXPath("(//span[@class='latoBold font12 pointer makeFlex hrtlCenter right blueText'])[1]").click();
 		//driver.findElementByXPath("//span[@class='close']").click();
 		
 
-              try {
-                 driver.findElementByPartialLinkText("Alert:").click();
+              //try {
+                //driver.findElementByPartialLinkText("Alert:").click();
                   }
-                 catch (Exception ex)
-                 {
+                 //catch (Exception ex)
+                 //{
 	
-                   System.out.println("alret is not handled");
+                  // System.out.println("alret is not handled");
 	 
-	           ex.printStackTrace();
+	          // ex.printStackTrace();
 	
-                   }
+                   //}
 		
 	
 		//driver.switchTo().frame(driver.findElementByXPath("//div[@class='tablerow']"));
@@ -152,10 +152,15 @@ public class Day3MakeMyTripWorkout {
 		
 		//driver.switchTo().defaultContent();
 		//Thread.sleep(2000);
-		
-		driver.findElementById("detpg_book_combo_btn").click();
-		String paymentamount = driver.findElementById("totalPaymentRow").getText();
+//Click on BOOK THIS NOW		
+		driver.findElementByLinkText("BOOK THIS NOW").click();
+//Print the Total Payable amount
+	        String paymentamount = driver.findElementById("revpg_total_payable_amt").getText();
 		System.out.println("Total payment amount for the trip:" +paymentamount);
+//Close the browser	
+	        driver.close();
+	        driver.quit();
+		
 
 	}
 
