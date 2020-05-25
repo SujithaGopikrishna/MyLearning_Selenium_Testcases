@@ -44,15 +44,7 @@ public class HondaTestCase {
 		builderengine.moveToElement(engine).perform();
 		Thread.sleep(2000);
 		List<WebElement> enginespecific = driver.findElementsByXPath("(//div[@class='engine part-2 axx']//li//span)[4]");
-		//int <WebElement>  = enginespecific;
 		
-//		for (int i=1; i<=enginespecific.size(); i++)
-//		{
-//			//enginespecific.get(i).findElement(By.tagName("span"));
-//			System.out.println(i);
-//			System.out.println();
-//		}
-//		
 		for (WebElement list : enginespecific) 
 		{
 			System.out.println(list.getText());
@@ -118,7 +110,7 @@ public class HondaTestCase {
 		//Click  Vehicle Price 
 		driver.findElementByXPath("//a[text()=' Vehicle Price']").click();
 		
-		//
+		//Make sure Activa 125 BS-VI selected and click submit 
 		
 		WebElement VT = driver.findElementById("SegmentID6");
 		Select ss = new Select(VT);
@@ -134,30 +126,25 @@ public class HondaTestCase {
 		
 		String type ="Scooter";
 		String Name = "Activa 125 BS-VI";
-        if ((getVT.equals(type)) && (getVN.equals(Name)))
+               if ((getVT.equals(type)) && (getVN.equals(Name)))
 		{
 			driver.findElementByXPath("//button[@id='submit6']").click();
 			System.out.println(" *****checking for price value ****"+ "\n" +"Click the link to view price details");
 		}
-        else
-        {
+                 else
+                {
         	System.out.println("Vehical Type and Name is not matched");
-        }
+                }
 	     Thread.sleep(2000);
 	     System.out.print("\n");
-        //driver.findElementByXPath("(//a[@href='https://www.honda2wheelersindia.com/activa125-BS-VI/price'])//ancestor::tr").click();
-        
+       
+        //click the price link 
         String gettabletext = driver.findElementByXPath("(//table[@id='tblPriceMasterFilters'])/tbody/tr/td[3]").getText();
         
-        //div*[@id='divPriceMasterResult']/table[1]/thread/tbody/tr[1]/td[3]
-        //div[@id='divPriceMasterResult']/table[1]/tbody/tr[1]/td[3]
-        //table[@id='tblPriceMasterFilters']
+       
         System.out.println(gettabletext);
         
         driver.findElementByXPath("//table[@id='tblPriceMasterFilters']/tbody/tr[1]/td[3]").click();
-        
-        // <a href="https://www.honda2wheelersindia.com/activa125-BS-VI/price"
-        
         
         //Go to the new Window and select the state as Tamil Nadu and  city as Chennai   
             
@@ -178,15 +165,7 @@ public class HondaTestCase {
         Thread.sleep(2000);
         
         System.out.println(" ****** selected state - Tamil Nadu & city - Chennai ****** ");
-        
-        //
-//        WebElement modelist = driver.findElementByXPath("//table[@id='gvshow']");
-//        String getprice = modelist.getText();
-        
- //       System.out.println(getprice);
-        
-      //table[@id='gvshow']//tbody//tr//td[2]
-        
+       
         System.out.print("\n");
         
         System.out.println(" ****** List od Model and Prices ****** ");
